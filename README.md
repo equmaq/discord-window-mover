@@ -21,3 +21,6 @@ If you have Discord set to something other than English, you can fix this by rep
 
 To find out what that is, simply close Discord, disconnect your internet, and open Discord again. 
 Then hover over Discord in your taskbar and look at what the window title is.
+Like This:
+![Capture](https://github.com/user-attachments/assets/86349c79-9f16-456b-a07c-27273320c897)
+
