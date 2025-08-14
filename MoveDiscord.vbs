@@ -43,6 +43,7 @@ file.WriteLine "            [Win32]::GetWindowRect($hwnd, [ref]$rect)"
 file.WriteLine "            $w = $rect.Right - $rect.Left"
 file.WriteLine "            $h = $rect.Bottom - $rect.Top"
 file.WriteLine "            [Win32]::MoveWindow($hwnd, $wa.X, $wa.Y, $w, $h, $true)"
+file.WriteLine "            sleep 0.5"
 file.WriteLine "            [Win32]::ShowWindow($hwnd, $SW_MAXIMIZE)"
 file.WriteLine "            exit"
 file.WriteLine "        }"
@@ -53,3 +54,4 @@ file.WriteLine "}"
 file.Close
 
 objShell.Run "powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File """ & psFile & """", 0, False
+
